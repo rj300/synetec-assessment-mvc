@@ -150,31 +150,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BonusPoolController.cs" />
-    <Compile Include="Data\BonusPoolModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BonusPoolModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\BonusPoolModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BonusPoolModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\BonusPoolModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BonusPoolModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Data\HrDepartment.cs">
-      <DependentUpon>BonusPoolModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\HrEmployee.cs">
-      <DependentUpon>BonusPoolModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IDepartment.cs" />
+    <Compile Include="Interfaces\IEmployeeInterface.cs" />
     <Compile Include="Models\BonusPoolCalculatorModel.cs" />
     <Compile Include="Models\BonusPoolCalculatorResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -182,16 +164,6 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Data\BonusPoolModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BonusPoolModel.edmx</DependentUpon>
-      <LastGenOutput>BonusPoolModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Data\BonusPoolModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BonusPoolModel.edmx</DependentUpon>
-      <LastGenOutput>BonusPoolModel.cs</LastGenOutput>
-    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -200,13 +172,6 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <EntityDeploy Include="Data\BonusPoolModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BonusPoolModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Data\BonusPoolModel.edmx.diagram">
-      <DependentUpon>BonusPoolModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -253,6 +218,20 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SynetecData\SynetecData.csproj">
+      <Project>{fcece74c-52ce-429d-a4ab-890f422e3b57}</Project>
+      <Name>SynetecData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SynetecServices\SynetecServices.csproj">
+      <Project>{263049ae-b712-4edd-b256-237a03343bea}</Project>
+      <Name>SynetecServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SyntecRepositories\SynetecRepositories.csproj">
+      <Project>{FC17BAD5-917A-4DB6-BEC9-6F3328F6A0C3}</Project>
+      <Name>SynetecRepositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

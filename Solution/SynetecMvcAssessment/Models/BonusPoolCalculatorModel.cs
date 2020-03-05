@@ -9,7 +9,7 @@ namespace InterviewTestTemplatev2.Models
     {
 
         public int BonusPoolAmount { get; set; }
-        public List<Data.HrEmployee> AllEmployees { get; set; }        
+        public List<SynetecData.Data.HrEmployee> AllEmployees { get; set; }        
         public int SelectedEmployeeId { get; set; }
 
     }
