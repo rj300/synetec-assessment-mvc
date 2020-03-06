@@ -12,8 +12,13 @@ namespace InterviewTestTemplatev2.Controllers
     
     public class BonusPoolController : BaseController
     {
+        public BonusPoolController()
+        {
+
+        }
         public BonusPoolController(IServiceFactory serviceFactory) : base(serviceFactory)
         {
+
         }
 
         // GET: BonusPool

@@ -1,7 +1,5 @@
-﻿using SynetecData.Data;
-using System;
+﻿using SynetecDatabase.Data;
 using System.Collections.Generic;
-using System.Text;
 
 namespace SynetecRepositories.Interfaces
 {

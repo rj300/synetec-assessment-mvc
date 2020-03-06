@@ -51,9 +51,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SynetecData\SynetecData.csproj">
-      <Project>{fcece74c-52ce-429d-a4ab-890f422e3b57}</Project>
-      <Name>SynetecData</Name>
+    <ProjectReference Include="..\SynetecDatabase\SynetecDatabase.csproj">
+      <Project>{89154381-421D-49BD-822F-62F8C0F3CF19}</Project>
+      <Name>SynetecDatabase</Name>
     </ProjectReference>
     <ProjectReference Include="..\SyntecRepositories\SynetecRepositories.csproj">
       <Project>{fc17bad5-917a-4db6-bec9-6f3328f6a0c3}</Project>

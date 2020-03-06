@@ -14,5 +14,11 @@ namespace SynetecServices
             RepoFactory = new SynetecRepositoryFactory();
             ServiceFactory = new ServiceFactory();
         }
+
+        public BaseService(IBaseSynetecRepoFactory repoFactory, IServiceFactory serviceFactory)
+        {
+            RepoFactory = repoFactory;
+            ServiceFactory = serviceFactory;
+        }
     }
 }

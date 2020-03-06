@@ -56,9 +56,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SynetecData\SynetecData.csproj">
-      <Project>{FCECE74C-52CE-429D-A4AB-890F422E3B57}</Project>
-      <Name>SynetecData</Name>
+    <ProjectReference Include="..\SynetecDatabase\SynetecDatabase.csproj">
+      <Project>{89154381-421D-49BD-822F-62F8C0F3CF19}</Project>
+      <Name>SynetecDatabase</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

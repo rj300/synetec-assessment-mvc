@@ -14,5 +14,9 @@ namespace InterviewTestTemplatev2.Controllers
         {
             ServiceFactory = serviceFactory;
         }
+        public BaseController()
+        {
+            ServiceFactory = new ServiceFactory();
+        }
     }
 }

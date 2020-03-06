@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SynetecDatabase.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,7 +10,7 @@ namespace InterviewTestTemplatev2.Models
     {
 
         public int BonusPoolAmount { get; set; }
-        public List<SynetecData.Data.HrEmployee> AllEmployees { get; set; }        
+        public List<HrEmployee> AllEmployees { get; set; }        
         public int SelectedEmployeeId { get; set; }
 
     }

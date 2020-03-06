@@ -1,8 +1,7 @@
 ﻿using SynetecRepositories.Interfaces;
-using SynetecRepositories;
 using System.Collections.Generic;
 using System.Linq;
-using SynetecData.Data;
+using SynetecDatabase.Data;
 
 namespace SynetecRepositories
 {

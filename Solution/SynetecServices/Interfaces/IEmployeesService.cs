@@ -1,9 +1,5 @@
-﻿using SynetecData.Data;
-using System;
+﻿using SynetecDatabase.Data;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SynetecServices.Interfaces
 {

@@ -220,9 +220,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SynetecData\SynetecData.csproj">
-      <Project>{fcece74c-52ce-429d-a4ab-890f422e3b57}</Project>
-      <Name>SynetecData</Name>
+    <ProjectReference Include="..\SynetecDatabase\SynetecDatabase.csproj">
+      <Project>{89154381-421D-49BD-822F-62F8C0F3CF19}</Project>
+      <Name>SynetecDatabase</Name>
     </ProjectReference>
     <ProjectReference Include="..\SynetecServices\SynetecServices.csproj">
       <Project>{263049ae-b712-4edd-b256-237a03343bea}</Project>
